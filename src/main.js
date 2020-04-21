@@ -1,7 +1,15 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import store from './store'
+
+window.Popper = require('popper.js').default;
+window.$ = window.jQuery = require('jquery');
+window._ = require('lodash')
+
+require('bootstrap');
+import 'bootstrap/dist/css/bootstrap.css';
+
+import { store } from './store'
 
 Vue.config.productionTip = false
 
